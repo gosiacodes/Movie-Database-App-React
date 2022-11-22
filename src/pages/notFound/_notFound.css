@@ -1,0 +1,17 @@
+.not-found-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  justify-content: center;
+}
+
+.not-found-info {
+  letter-spacing: 1px;
+  margin-top: 1.5rem;
+}
+
+.not-found-img {
+  width: 384px;
+  height: 384px;
+}

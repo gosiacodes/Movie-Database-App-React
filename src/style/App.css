@@ -1,0 +1,67 @@
+@import url("https://fonts.googleapis.com/css2?family=Concert+One&family=Italiana&family=Roboto&family=Varela+Round&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+}
+
+body {
+  font-family: Roboto, Tahoma, Helvetica, Verdana, Arial, sans-serif;
+  background-color: #0d0d0d;
+  color: #fff;
+}
+
+main {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin: 0.5rem;
+}
+
+h1 {
+  color: #b59136;
+  letter-spacing: 1px;
+}
+
+p {
+  margin: 0.5rem;
+}
+
+button {
+  background-color: #b59136;
+  color: #fff;
+  margin: 1rem;
+  padding: 0.75rem;
+  font-size: 1.1rem;
+  width: 50%;
+  cursor: pointer;
+  border-radius: 0.3rem;
+  transition-duration: 0.3s;
+  box-shadow: 0 2px 6px rgba(170, 169, 171, 0.7);
+}
+
+button:hover {
+  background-color: #604200;
+}
+
+.username-div {
+  font-family: Italiana, Varela Round, Tahoma, Helvetica, Verdana, Arial,
+    sans-serif;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100%;
+  letter-spacing: 1px;
+  margin-right: 1rem;
+}

@@ -1,0 +1,47 @@
+.footer {
+  background-color: #604200;
+  font-size: 1.5rem;
+  width: 100%;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+  padding: 1rem;
+  height: 10rem;
+  max-height: 250px;
+  overflow: hidden;
+  bottom: 0;
+  box-shadow: 4px 0 8px rgb(74 68 83 / 70%);
+}
+
+.footer h4 {
+  font-family: Italiana, Varela Round, Tahoma, Helvetica, Verdana, Arial,
+    sans-serif;
+  letter-spacing: 1px;
+  margin-bottom: 1rem;
+}
+
+.social-media {
+  margin-bottom: 1rem;
+}
+
+.social-media > a {
+  font-size: 1.2rem;
+  color: white;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  border-bottom: solid 3px #604200;
+}
+
+.social-media > a:hover {
+  border-bottom: solid 3px #b59136;
+}
+
+.icon-authors > a {
+  font-size: 0.75rem;
+  color: white;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+}

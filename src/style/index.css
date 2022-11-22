@@ -1,0 +1,11 @@
+@import './App.css';
+@import '../components/header/_header.css';
+@import '../components/footer/_footer.css';
+@import '../components/modal/_modal.css';
+@import '../components/renderData/_renderData.css';
+@import '../pages/movies/_movies.css';
+@import '../pages/login/_logIn.css';
+@import '../pages/notFound/_notFound.css';
+@import '../components/UI/_navBtn.css';
+
+

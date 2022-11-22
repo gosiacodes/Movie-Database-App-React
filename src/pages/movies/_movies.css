@@ -1,0 +1,40 @@
+.movie-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 25rem;
+  height: 25rem;
+  margin: 1rem;
+  padding: 1rem;
+  border: #b59136 2px solid;
+  border-radius: 0.3rem;
+  box-shadow: 0 2px 6px rgba(170, 169, 171, 0.7);
+}
+
+.add-movie-input {
+  width: 80%;
+  height: 1.8rem;
+  font-size: 1.1rem;
+  margin: 0.5rem;
+  padding: 0.7rem;
+  border: 2px solid #b59136;
+  border-radius: 0.3rem;
+}
+
+.add-movie-btn {
+  background-color: #b59136;
+  color: #fff;
+  margin: 1rem;
+  padding: 0.75rem;
+  font-size: 1.1rem;
+  width: 50%;
+  cursor: pointer;
+  border-radius: 0.3rem;
+  transition-duration: 0.3s;
+  box-shadow: 0 2px 6px rgba(170, 169, 171, 0.7);
+}
+
+.add-movie-btn:hover {
+  background-color: #604200;
+}
