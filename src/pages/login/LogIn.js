@@ -1,8 +1,9 @@
 import { Fragment, useState, useEffect } from "react";
+import { useNavigate, useLocation } from "react-router-dom";
 import SignIn from "../../components/signIn/SignIn";
 import SignUp from "../../components/signUp/SignUp";
 import Modal from "../../components/modal/Modal";
-import { useNavigate, useLocation } from "react-router-dom";
+import NavBtnGoHome from "../../components/UI/NavBtnGoHome";
 
 const LogIn = () => {
   const navigate = useNavigate();
@@ -20,7 +21,6 @@ const LogIn = () => {
   const [goHome, setGoHome] = useState(false);
 
   const addNewUser = (user) => {
-    console.log(user);
     let check = false;
     usersList.map((value) => {
       return value.email === user.email ? (check = true) : "";
@@ -86,13 +86,19 @@ const LogIn = () => {
       <main>
         {username !== "" ? (
           <div className="logout-container">
-            <img
-              className="logout-img"
-              src="/images/camera-action_128.png"
-              alt="camera action"
-            />
-            <h2 className="title">See you again!</h2>
-            <h3>{localStorage.getItem("username")}</h3>
+            <picture>
+              <source
+                srcSet="/images/camera-action_64.png"
+                media="(max-width: 350px)"
+              />
+              <source
+                srcSet="/images/camera-action_96.png"
+                media="(max-width: 600px)"
+              />
+              <img src="/images/camera-action_128.png" alt="camera action" />
+            </picture>
+            <h2 className="logout-title">See you again!</h2>
+            <h3 className="username">{username}</h3>
             <button
               type="button"
               className="login-btn"
@@ -105,9 +111,11 @@ const LogIn = () => {
         {username === "" ? (
           <div className="login-container">
             <SignIn loginUser={loginUser}></SignIn>
+            <div className="line"></div>
             <SignUp addNewUser={addNewUser}></SignUp>
           </div>
         ) : null}
+        <NavBtnGoHome></NavBtnGoHome>
         {showModal ? (
           <Modal
             message={message}

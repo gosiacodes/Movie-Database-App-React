@@ -1,5 +1,6 @@
 import { Fragment, useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
+import NavBtnGoHome from "../../components/UI/NavBtnGoHome";
 
 const AddMovie = () => {
   const moviesList = localStorage.getItem("moviesList")
@@ -29,7 +30,6 @@ const AddMovie = () => {
   const submitNewMovie = (e) => {
     e.preventDefault();
     const tempMovies = [...moviesList];
-    console.log(tempMovies);
     tempMovies.push(movie);
     localStorage.setItem("moviesList", JSON.stringify(tempMovies));
     navigate("/movies");
@@ -48,11 +48,11 @@ const AddMovie = () => {
       <main>
         {username !== "" && (
           <div className="username-div">
-            <h3>{username}</h3>
+            <h3 className="username">{username}</h3>
           </div>
         )}
         <form className="movie-form" onSubmit={submitNewMovie}>
-          <h2>Add new movie</h2>
+          <h2 className="add-movie-title">Add new movie</h2>
           <input
             type="text"
             className="add-movie-input"
@@ -63,7 +63,7 @@ const AddMovie = () => {
             onChange={handleChange}
           ></input>
           <input
-            type="text"
+            type="number"
             className="add-movie-input"
             name="prodYear"
             placeholder="Production year"
@@ -86,6 +86,7 @@ const AddMovie = () => {
             value="Add movie"
           ></input>
         </form>
+        <NavBtnGoHome></NavBtnGoHome>
       </main>
     </Fragment>
   );

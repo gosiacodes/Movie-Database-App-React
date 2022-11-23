@@ -1,3 +1,4 @@
+/* Header */
 .header {
   display: flex;
   flex-direction: row;
@@ -13,15 +14,8 @@
   height: 4.375rem;
 }
 
-.navlink {
-  font-size: 1.2rem;
-  color: #fff;
-  text-decoration: none;
-  border-bottom: solid 3px transparent;
-}
-
 .login-div {
-  width: 150px;
+  width: 9rem;
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
@@ -30,6 +24,10 @@
 
 #nav-login {
   padding: 0.5rem;
+  font-size: 1.2rem;
+  color: #fff;
+  text-decoration: none;
+  border-bottom: solid 3px transparent;
 }
 
 #nav-login:hover {
@@ -41,4 +39,55 @@
   font-family: Italiana, Varela Round, Tahoma, Helvetica, Verdana, Arial,
     sans-serif;
   color: #b59136;
+  text-align: center;
+}
+
+/* Media queries */
+@media only screen and (max-width: 800px) {
+  .header {
+    padding: 0 1rem;
+  }
+  .header-title {
+    font-size: 1.75rem;
+  }
+  #nav-login {
+    font-size: 1.1rem;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .header {
+    padding: 0;
+    height: 4rem;
+  }
+  .navlink > img {
+    width: 4.6875rem;
+    height: 2.1875rem;
+    margin-left: 0.25rem;
+  }
+  .header-title {
+    font-size: 1.35rem;
+  }
+  #nav-login {
+    font-size: 1rem;
+  }
+  .login-div {
+    width: 4.5rem;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .navlink > img {
+    width: 3.525rem;
+    height: 1.65rem;
+  }
+  .header-title {
+    font-size: 1.2rem;
+  }
+  #nav-login {
+    font-size: 0.9rem;
+  }
+  .login-div {
+    width: 3.5rem;
+  }
 }

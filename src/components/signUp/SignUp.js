@@ -35,20 +35,11 @@ export default class SignUp extends React.Component {
     );
   };
 
-  cleanInput = () => {
-    if (this.username === "") {
-      Array.from(document.querySelectorAll(".login-input")).forEach(
-        (input) => (input.value = "")
-      );
-    }
-  };
-
   render() {
     return (
       <Fragment>
-        {this.cleanInput()}
-        <form onSubmit={this.submitUser}>
-          <h2>Don't have an account? Sign up!</h2>
+        <form className="login-form" onSubmit={this.submitUser}>
+          <h2 className="login-title">Don't have an account? Sign up!</h2>
           <input
             type="email"
             name="email"

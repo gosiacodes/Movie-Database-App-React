@@ -20,7 +20,7 @@ const Movie = () => {
       <main>
         {username !== "" && (
           <div className="username-div">
-            <h3>{username}</h3>
+            <h3 className="username">{username}</h3>
           </div>
         )}
         {location.state && (

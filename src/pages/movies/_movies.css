@@ -1,3 +1,4 @@
+/* Add movie page */
 .movie-form {
   display: flex;
   flex-direction: column;
@@ -7,19 +8,22 @@
   height: 25rem;
   margin: 1rem;
   padding: 1rem;
-  border: #b59136 2px solid;
   border-radius: 0.3rem;
+  border: #b59136 2px solid;
   box-shadow: 0 2px 6px rgba(170, 169, 171, 0.7);
+}
+
+.add-movie-title {
+  letter-spacing: 1px;
 }
 
 .add-movie-input {
   width: 80%;
-  height: 1.8rem;
   font-size: 1.1rem;
   margin: 0.5rem;
   padding: 0.7rem;
-  border: 2px solid #b59136;
   border-radius: 0.3rem;
+  border: 2px solid #b59136;
 }
 
 .add-movie-btn {
@@ -28,7 +32,7 @@
   margin: 1rem;
   padding: 0.75rem;
   font-size: 1.1rem;
-  width: 50%;
+  width: 7rem;
   cursor: pointer;
   border-radius: 0.3rem;
   transition-duration: 0.3s;
@@ -37,4 +41,55 @@
 
 .add-movie-btn:hover {
   background-color: #604200;
+}
+
+/* Media queries */
+@media only screen and (max-width: 1050px) {
+  .movie-form {
+    width: 24rem;
+    height: 24rem;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .movie-form {
+    width: 22rem;
+    height: 22rem;
+  }
+  .add-movie-input {
+    font-size: 1rem;
+    padding: 0.6rem;
+  }
+  .add-movie-btn {
+    margin: 0.75rem;
+    padding: 0.5rem;
+    font-size: 1rem;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .movie-form {
+    width: 20rem;
+    height: 20rem;
+  }
+  .add-movie-title {
+    font-size: 1.1rem;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .movie-form {
+    width: 18rem;
+    height: 18rem;
+  }
+  .add-movie-input {
+    font-size: 0.9rem;
+  }
+}
+
+@media only screen and (max-width: 350px) {
+  .movie-form {
+    width: 16rem;
+    height: 16rem;
+  }
 }

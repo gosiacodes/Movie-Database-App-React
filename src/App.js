@@ -17,7 +17,7 @@ const App = () => {
       <main>
         {username !== "" && (
           <div className="username-div">
-            <h3>Welcome {username}</h3>
+            <h3 className="username">Welcome {username}</h3>
           </div>
         )}
         <RenderMovies moviesList={moviesList}></RenderMovies>

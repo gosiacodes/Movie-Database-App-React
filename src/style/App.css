@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Concert+One&family=Italiana&family=Roboto&family=Varela+Round&display=swap");
 
+/* Global settings */
 * {
   margin: 0;
   padding: 0;
@@ -24,17 +25,14 @@ h1,
 h2,
 h3,
 h4,
-h5 {
+h5,
+p {
   margin: 0.5rem;
 }
 
 h1 {
   color: #b59136;
   letter-spacing: 1px;
-}
-
-p {
-  margin: 0.5rem;
 }
 
 button {
@@ -64,4 +62,30 @@ button:hover {
   width: 100%;
   letter-spacing: 1px;
   margin-right: 1rem;
+}
+
+/* Media queries */
+@media only screen and (max-width: 800px) {
+  .username {
+    font-size: 1rem;
+  }
+  button {
+    margin: 0.75rem;
+    padding: 0.5rem;
+    font-size: 1rem;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  p {
+    margin: 0.4rem;
+  }
+  .username {
+    font-size: 0.9rem;
+  }
 }

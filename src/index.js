@@ -16,15 +16,15 @@ root.render(
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Layout />}>
-          <Route index element={<App/>}></Route>
-          <Route path="login" element={<LogIn/>}></Route>
-          <Route path="*" element={<NotFound/>}></Route>
+          <Route index element={<App />}></Route>
+          <Route path="login" element={<LogIn />}></Route>
+          <Route path="*" element={<NotFound />}></Route>
         </Route>
         <Route path="/movies" element={<Layout />}>
-          <Route index element={<Movies/>}></Route>
-          <Route path="addMovie" element={<AddMovie/>}></Route>
-          <Route path=":title" element={<Movie/>}></Route>
-          <Route path="*" element={<NotFound/>}></Route>
+          <Route index element={<Movies />}></Route>
+          <Route path="addMovie" element={<AddMovie />}></Route>
+          <Route path=":title" element={<Movie />}></Route>
+          <Route path="*" element={<NotFound />}></Route>
         </Route>
       </Routes>
     </BrowserRouter>

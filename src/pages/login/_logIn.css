@@ -1,3 +1,4 @@
+/* Profile page */
 .login-container,
 .logout-container {
   display: flex;
@@ -6,7 +7,6 @@
   align-items: center;
   row-gap: 1.5rem;
   width: 40rem;
-  height: 23rem;
   margin: 2rem;
   padding: 2rem;
   border-radius: 0.3rem;
@@ -15,12 +15,15 @@
 }
 
 .login-input {
-  height: 1.5rem;
   font-size: 1rem;
   margin: 0.5rem;
-  padding: 0.6rem;
+  padding: 0.75rem;
   border-radius: 0.3rem;
   border: 2px solid #b59136;
+}
+
+.login-input:focus {
+  border: 2px solid #ff614c;
 }
 
 .login-btn {
@@ -40,7 +43,91 @@
   background-color: #604200;
 }
 
-.title {
+.login-title {
+  letter-spacing: 1px;
+}
+
+.logout-title {
   color: #b59136;
   letter-spacing: 1px;
+}
+
+.line {
+  border-bottom: 2px solid #b59136;
+  width: 90%;
+  margin: 0.5rem 0;
+}
+
+/* Media queries */
+@media only screen and (max-width: 800px) {
+  .login-container,
+  .logout-container {
+    width: 30rem;
+    justify-content: space-between;
+    row-gap: 1rem;
+  }
+  .login-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.5rem;
+  }
+  .login-input {
+    width: 75%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .login-container,
+  .logout-container {
+    width: 20rem;
+    padding: 1rem;
+    margin: 1rem;
+    margin-top: 2rem;
+    row-gap: 0.5rem;
+  }
+  .login-title,
+  .logout-title {
+    font-size: 1.1rem;
+  }
+  .login-input {
+    font-size: 0.9rem;
+    margin: 0.5rem;
+    padding: 0.5rem;
+  }
+  .login-btn {
+    margin: 0.75rem;
+    padding: 0.5rem;
+    font-size: 0.9rem;
+    width: 5rem;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .login-container,
+  .logout-container {
+    width: 17rem;
+    margin: 0.5rem;
+    margin-top: 3rem;
+  }
+  .login-title,
+  .logout-title {
+    font-size: 1em;
+    letter-spacing: 0;
+    text-align: center;
+  }
+  .login-input {
+    width: 85%;
+  }
+  .login-btn {
+    margin: 0.5rem;
+  }
+}
+
+@media only screen and (max-width: 350px) {
+  .login-container,
+  .logout-container {
+    width: 14rem;
+  }
 }

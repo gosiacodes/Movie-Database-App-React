@@ -1,17 +1,50 @@
+/* Not found page */
 .not-found-container {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
   align-items: center;
-  justify-content: center;
+  margin-top: 1rem;
 }
 
 .not-found-info {
-  letter-spacing: 1px;
   margin-top: 1.5rem;
 }
 
 .not-found-img {
-  width: 384px;
-  height: 384px;
+  width: 24rem;
+  height: 24rem;
+}
+
+/* Media queries */
+@media only screen and (max-width: 800px) {
+  .not-found-info {
+    font-size: 1.75rem;
+  }
+  .not-found-img {
+    width: 20rem;
+    height: 20rem;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .not-found-container {
+    margin-top: 2rem;
+  }
+  .not-found-info {
+    font-size: 1.5rem;
+  }
+  .not-found-img {
+    width: 16rem;
+    height: 16rem;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .not-found-info {
+    font-size: 1.35rem;
+  }
+  .not-found-img {
+    width: 12rem;
+    height: 12rem;
+  }
 }

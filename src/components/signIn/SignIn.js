@@ -25,8 +25,8 @@ const SignIn = (props) => {
 
   return (
     <Fragment>
-      <form onSubmit={submitUser}>
-        <h2>Already have an account? Sign in!</h2>
+      <form className="login-form" onSubmit={submitUser}>
+        <h2 className="login-title">Already have an account? Sign in!</h2>
         <input
           type="email"
           name="email"

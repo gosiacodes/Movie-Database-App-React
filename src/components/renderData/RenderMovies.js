@@ -16,7 +16,6 @@ const RenderMoviesData = (props) => {
     tempMovies.splice(index, 1);
     localStorage.setItem("moviesList", JSON.stringify(tempMovies));
     setMovies(tempMovies);
-    console.log("movie deleted");
   };
 
   useEffect(() => {}, [moviesList]);
