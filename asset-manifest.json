@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/Movie-Database-App-React/static/css/main.2d075edd.css",
+    "main.js": "/Movie-Database-App-React/static/js/main.4f84db50.js",
+    "index.html": "/Movie-Database-App-React/index.html",
+    "main.2d075edd.css.map": "/Movie-Database-App-React/static/css/main.2d075edd.css.map",
+    "main.4f84db50.js.map": "/Movie-Database-App-React/static/js/main.4f84db50.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2d075edd.css",
+    "static/js/main.4f84db50.js"
+  ]
+}
