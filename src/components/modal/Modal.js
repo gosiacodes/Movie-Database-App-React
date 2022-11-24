@@ -1,11 +1,13 @@
 import { Fragment } from "react";
 
 const Modal = (props) => {
+  // Function to hide modal
   const hideModal = () => {
     props.setShowModal(false);
   };
 
   return (
+    // Returning modal (depending on boolean in LogIn.js)
     <Fragment>
       <div id="message-modal" className="modal-background">
         <div className="modal-container">

@@ -1,6 +1,8 @@
 import React, { Fragment } from "react";
 
+// Class component according to the instructions
 export default class SignUp extends React.Component {
+  // Setting states and variables
   constructor(props) {
     super(props);
     this.state = {
@@ -14,6 +16,7 @@ export default class SignUp extends React.Component {
     ? localStorage.getItem("username")
     : "";
 
+  // Setting user when input values changes
   handleChange = (event) => {
     if (event.target.name === "email") {
       this.setState({
@@ -27,6 +30,7 @@ export default class SignUp extends React.Component {
     }
   };
 
+  // Submitting new user to list of movies via props-function and emptying inputs
   submitUser = (e) => {
     e.preventDefault();
     this.props.addNewUser(this.state.user);
@@ -36,6 +40,7 @@ export default class SignUp extends React.Component {
   };
 
   render() {
+    // Returning input form for adding a new user
     return (
       <Fragment>
         <form className="login-form" onSubmit={this.submitUser}>
@@ -53,6 +58,8 @@ export default class SignUp extends React.Component {
             name="password"
             className="login-input"
             placeholder="password"
+            minLength="4"
+            maxLength="20"
             required
             onChange={this.handleChange}
           ></input>

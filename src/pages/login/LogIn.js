@@ -1,13 +1,13 @@
 import { Fragment, useState, useEffect } from "react";
-import { useNavigate, useLocation } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import SignIn from "../../components/signIn/SignIn";
 import SignUp from "../../components/signUp/SignUp";
 import Modal from "../../components/modal/Modal";
 import NavBtnGoHome from "../../components/UI/NavBtnGoHome";
 
 const LogIn = () => {
-  const navigate = useNavigate();
-  const location = useLocation();
+  // Setting states and navigate
+  const navigate = useNavigate(); 
   const [message, setMessage] = useState("");
   const [showModal, setShowModal] = useState(false);
   const [username, setUsername] = useState(
@@ -20,6 +20,7 @@ const LogIn = () => {
   );
   const [goHome, setGoHome] = useState(false);
 
+  // Adding new user to list (if it doesn't already exist)
   const addNewUser = (user) => {
     let check = false;
     usersList.map((value) => {
@@ -35,6 +36,8 @@ const LogIn = () => {
     }
   };
 
+  // Logging in user with checking if email and password are correct
+  // and then navigating to home page
   const loginUser = (user) => {
     let checkEmail = false;
     usersList.map((value) => {
@@ -60,15 +63,15 @@ const LogIn = () => {
     }
   };
 
+  // Logging out user with setting username values to empty string in state and LocalStorage
   const logoutUser = () => {
     setUsername("");
     localStorage.setItem("username", "");
   };
 
+  // If user is logged in, setting username in LocalStorage and navigating to home page
   useEffect(() => {
-    if (username === "") {
-      localStorage.setItem("username", "");
-    } else {
+    if (username !== "") {
       localStorage.setItem("username", username);
       if (goHome) {
         navigate("/");
@@ -76,11 +79,15 @@ const LogIn = () => {
     }
   }, [username, goHome, navigate]);
 
+  // Adding updated list of users to LocalStorage
   useEffect(() => {
-    console.log(JSON.stringify(usersList));
     localStorage.setItem("usersList", JSON.stringify(usersList));
-  }, [usersList, message, location.state]);
+  }, [usersList, message]);
 
+  // Returning components and showing them in DOM, sending props to components
+  // If user is not logged in, showing login container with sign up and sign in components
+  // If user is logged in, showing logout container with username
+  // Showing modal component with message when boolean is true
   return (
     <Fragment>
       <main>

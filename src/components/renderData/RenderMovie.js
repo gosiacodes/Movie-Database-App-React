@@ -1,6 +1,7 @@
 import NavBtnGoHome from "../UI/NavBtnGoHome";
 
 const RenderMovie = (props) => {
+  // Returning movie and "back to home page" button component
   return (
     <div className="movie-container">
       <h3 className="movie-title">{props.movie.title}</h3>

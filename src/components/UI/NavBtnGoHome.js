@@ -2,6 +2,7 @@ import { Fragment } from "react";
 import { NavLink } from "react-router-dom";
 
 const NavButtonGoHome = () => {
+  // Returning "back to home page" button component with navigation to home page
   return (
     <Fragment>
       <div className={"home-btn-div"}>

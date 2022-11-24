@@ -1,6 +1,7 @@
 import { Fragment } from "react";
 
 const Footer = () => {
+  // Returning footer with copyrights, links to social media and links to icons authors
   return (
     <Fragment>
       <footer className="footer">

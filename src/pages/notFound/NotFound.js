@@ -2,10 +2,13 @@ import { Fragment } from "react";
 import NavBtnGoHome from "../../components/UI/NavBtnGoHome";
 
 const NotFound = () => {
+  // Checking whether the user is logged in and saved in LocalStorage
   const username = localStorage.getItem("username")
     ? localStorage.getItem("username")
     : "";
 
+  // Returning "page not found" info with picture and navigation button component
+  // If user is logged in, showing username
   return (
     <Fragment>
       <main>

@@ -1,11 +1,13 @@
 import { Fragment, useState, useEffect } from "react";
 
 const SignIn = (props) => {
+  // Setting state for user
   const [user, setUser] = useState({
     email: "",
     password: "",
   });
 
+  // Setting user when input values changes
   const handleChange = (event) => {
     setUser({
       ...user,
@@ -13,6 +15,7 @@ const SignIn = (props) => {
     });
   };
 
+  // Submitting user to login via props-function and emptying inputs
   const submitUser = (e) => {
     e.preventDefault();
     props.loginUser(user);
@@ -23,6 +26,7 @@ const SignIn = (props) => {
 
   useEffect(() => {}, [user]);
 
+  // Returning input form for logging in
   return (
     <Fragment>
       <form className="login-form" onSubmit={submitUser}>

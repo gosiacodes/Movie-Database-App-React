@@ -2,6 +2,7 @@ import { Fragment } from "react";
 import { NavLink } from "react-router-dom";
 
 const Header = () => {
+  // Returning header with logo (with NavLink to home page), title and NavLink to login page.
   return (
     <Fragment>
       <header className="header">
