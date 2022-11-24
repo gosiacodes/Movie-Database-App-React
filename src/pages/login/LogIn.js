@@ -95,14 +95,14 @@ const LogIn = () => {
           <div className="logout-container">
             <picture>
               <source
-                srcSet="/images/camera-action_64.png"
+                srcSet={process.env.PUBLIC_URL + "/images/camera-action_64.png"}
                 media="(max-width: 350px)"
               />
               <source
-                srcSet="/images/camera-action_96.png"
+                srcSet={process.env.PUBLIC_URL + "/images/camera-action_96.png"}
                 media="(max-width: 600px)"
               />
-              <img src="/images/camera-action_128.png" alt="camera action" />
+              <img src={process.env.PUBLIC_URL + "/images/camera-action_128.png"} alt="camera action" />             
             </picture>
             <h2 className="logout-title">See you again!</h2>
             <h3 className="username">{username}</h3>

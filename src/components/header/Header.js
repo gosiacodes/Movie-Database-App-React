@@ -7,7 +7,7 @@ const Header = () => {
     <Fragment>
       <header className="header">
         <NavLink to="/" className={"navlink"}>
-          <img src="/images/Grit-Academy-logo.png" alt="Grit Academy Logo" />
+          <img src={process.env.PUBLIC_URL + "/images/Grit-Academy-logo.png"} alt="Grit Academy Logo" />
         </NavLink>
         <h1 className="header-title">Movies Database CINEMA</h1>
         <div className="login-div">

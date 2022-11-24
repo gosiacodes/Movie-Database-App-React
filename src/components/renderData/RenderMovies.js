@@ -44,7 +44,7 @@ const RenderMoviesData = () => {
                 ) : null}
               </div>
               <p>{movie.prodYear}</p>
-              <img className="movie-img" src={movie.img} alt="movie template" />
+              <img className="movie-img" src={process.env.PUBLIC_URL + movie.img} alt="movie template" />
               <NavButtonReadMore movie={movie}></NavButtonReadMore>
             </li>
           );

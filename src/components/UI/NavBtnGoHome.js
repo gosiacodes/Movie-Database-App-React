@@ -9,11 +9,11 @@ const NavButtonGoHome = () => {
         <NavLink to="/">
           <picture>
             <source
-              srcSet="/images/chevron-double-left_48.png"
+              srcSet={process.env.PUBLIC_URL + "/images/chevron-double-left_48.png"}
               media="(max-width: 600px)"
             />
             <img
-              src="/images/chevron-double-left_64.png"
+              src={process.env.PUBLIC_URL + "/images/chevron-double-left_64.png"}
               alt="chevron left"
               title="Back to home page"
             />

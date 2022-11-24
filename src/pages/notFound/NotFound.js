@@ -21,16 +21,16 @@ const NotFound = () => {
           <h1 className="not-found-info">PAGE NOT FOUND</h1>
           <picture>
             <source
-              srcSet="/images/page-not-found_192.png"
+              srcSet={process.env.PUBLIC_URL + "/images/page-not-found_192.png"}
               media="(max-width: 400px)"
             />
             <source
-              srcSet="/images/page-not-found_256.png"
+              srcSet={process.env.PUBLIC_URL + "/images/page-not-found_256.png"}
               media="(max-width: 600px)"
             />
             <img
               className="not-found-img"
-              src="/images/page-not-found_512.png"
+              src={process.env.PUBLIC_URL + "/images/page-not-found_512.png"}
               alt="page not found"
             ></img>
           </picture>
