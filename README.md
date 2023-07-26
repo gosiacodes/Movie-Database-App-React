@@ -1,4 +1,45 @@
-# Getting Started with Create React App
+# :sparkles: Movie Database App React :sparkles:
+
+Movie Database App made with React - school project at JavaScript3 course (2022)
+
+https://gosiacodes.github.io/Movie-Database-App-React/
+
+## :pushpin: _How does the application work?_
+
+Movie Database application made with React.js.
+
+Training: 
+
+• React - class component with state, stateless function component with Hooks, routing, props, events, JSX
+
+• LocalStorage
+
+You have to create account to add movies to database.
+
+Movies are saved in LocalStorage and are visible for you when you come back to this homepage later.
+
+You can see the description of the movie when you click on the "Read more" button. 
+
+You can only delete movies added by you (and remove them from LocalStorage).
+
+You can sign in and sign out by clicking on "Profile".
+
+Every movie gets a template picture. 
+
+## :pushpin: _GUI examples_
+
+![Movies DB 1](public/images/Movies_DB_1.png)
+
+![Movies DB 2](public/images/Movies_DB_2.png)
+
+![Movies DB 3](public/images/Movies_DB_3.png)
+
+![Movies DB 4](public/images/Movies_DB_4.png)
+
+![Movies DB 5](public/images/Movies_DB_5.png)
+
+
+## Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
